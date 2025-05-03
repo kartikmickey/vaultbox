@@ -51,9 +51,15 @@ export default function Register() {
       </button>
 
       <div style={{ marginTop: "1rem", textAlign: "center" }}>
-        <a href="/login" style={linkStyle}>
+        {/* <a href="/login" style={linkStyle}>
           Already have an account?
-        </a>
+        </a> */}
+        <button
+          onClick={() => navigate("/login")}
+          style={linkStyle}
+        >
+          Already have an account?
+        </button>
       </div>
     </div>
   );
@@ -106,4 +112,6 @@ const linkStyle = {
   color: "#007bff",
   textDecoration: "none",
   fontSize: "14px",
+  background: "none",
+  border: "none"
 };
