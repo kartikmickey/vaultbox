@@ -61,9 +61,15 @@ export default function Login() {
       </button>
 
       <div style={footerLinksStyle}>
-        <a href="/register" style={linkStyle}>
+        {/* <a href="/register" style={linkStyle}>
           New User?
-        </a>
+        </a> */}
+        <button
+          onClick={() => navigate("/register")}
+          style={linkStyle}
+        >
+          New User?
+        </button>
         <button
           onClick={() => navigate("/emergency-access")}
           style={secondaryButtonStyle}
@@ -138,4 +144,6 @@ const linkStyle = {
   color: "#007bff",
   textDecoration: "none",
   fontSize: "14px",
+  background: "none",
+  border: "none"
 };
